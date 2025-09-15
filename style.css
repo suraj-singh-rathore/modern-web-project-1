@@ -13,6 +13,7 @@
 #main{
     width: 100wh;
     height: auto;
+    background-color: #000;
 }
 
 #hero{
@@ -71,15 +72,15 @@
     font-size: 1vw;
 }
 
-#footerhero{
+#footerhero {
     width: 100%;
     padding: 0 2vw;
-    position: absolute;
-    bottom: 3%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 80px;  /* <- gap banane ke liye */
 }
+
 
 #footerhero a{
     color: #fff;
@@ -261,17 +262,10 @@
 }
 
 .elemlast {
+    border-bottom: 1px solid #888;
     padding: 0 2vw;
 }
 
-.elemlast::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 40px;              
-    right: 0;                
-    border-bottom: 1px solid #888;
-}
 
 .elem1 img{
     position: absolute;
@@ -310,18 +304,20 @@
 
 #anchor{
     padding: 0 2vw;
+    padding-left: 2vw;
 }
 
 #anchor a{
     color: #fff;
-    padding: 12px 22px;
     padding-left: 2vw;
+    padding: 12px 22px;
     border: 1px solid #888;
     border-radius: 100px;
     display: inline-block;
     margin-top: 50px;
     text-decoration: none;
 }
+
 
 #anchor a sup{
     opacity: .5;
