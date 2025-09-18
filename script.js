@@ -29,6 +29,35 @@ function firstPageAnimation() {
     })
 }
 
+let timeout;
+function circleSquize(){
+    // default scale vlaue
+
+    var xscale = 1;
+    var yscale = 1;
+
+    var xprev = 0;
+    var yprev = 0;
+
+    window.addEventListener("mousemove", function(dets){
+        this.clearTimeout(timeout);
+
+        xscale = gsap.utils.clamp(.8, 1.2, dets.clientX - xprev);
+        yscale = gsap.utils.clamp(.8, 1.2, dets.clientY - yprev);
+
+        xprev = dets.clientX;
+        yprev = dets.clientY;
+
+        circleMouseFollower(xscale, yscale);
+
+
+        timeout = this.setTimeout(function () {
+            this.document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
+        }, 100);
+
+    });
+}
+
 function circleMouseFollower(){
     window.addEventListener("mousemove", function(dets){
         this.document.querySelector("#minicircle").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
@@ -37,3 +66,20 @@ function circleMouseFollower(){
 
 circleMouseFollower();
 firstPageAnimation();
+circleSquize();
+
+
+// document.querySelector(".elem1").forEach(function (elem) {
+//     elem.addEventListener("mousemove", function (dets) {
+//         console.log("hello ji");
+//     });
+// });
+
+document.querySelector(".elem1")
+  .addEventListener("mousemove", function (details) {
+    gsap.to(elem.querySelector("img"), {
+        opacity: 1,
+        ease: power1,
+  });
+  });
+
