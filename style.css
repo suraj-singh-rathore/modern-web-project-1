@@ -135,11 +135,104 @@
     background-color: #000;
 }
 
-.elem1 {
+/* ///////////////////////////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Section with all project elems */
+#second {
+  margin: 6rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Each project block */
+.elem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Hidden images (GSAP will show them) */
+.elem img {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Title */
+.elem h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+/* Year */
+.elem h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
+/* Hover title effect */
+.elem:hover h1 {
+  color: #ff4d5a;
+}
+
+/* View All Work */
+#anchor {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+#anchor a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+#anchor a:hover {
+  color: #ff4d5a;
+  border-color: #ff4d5a;
+}
+
+
+/* /////////////////////////// */
+
+/* .elem{
     width: 100%;
     height: 200px;
     position: relative;
-    /* border-top: 1px solid #777; */
     color: #fff;
     opacity: .6;
     display: flex;
@@ -148,7 +241,7 @@
     padding: 0 2vw;
 }
 
-.elem1::before {
+.elem::before {
     content: "";
     position: absolute;
     top: 0;
@@ -157,16 +250,16 @@
     border-top: 1px solid #777;
 }
 
-.elem1 h1{
+.elem h1{
     height: 200px;
     text-transform: uppercase;
     font-size: 6vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
+} */
 
-.elem2 {
+/* .elem2 {
     width: 100%;
     height: 200px;
     position: relative;
@@ -325,7 +418,7 @@
     z-index: 999;
     height: 100%;
     display: none;
-}
+} */
 
 #anchor{
     padding: 0 2vw;
