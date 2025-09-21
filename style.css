@@ -171,65 +171,7 @@ body {
   overflow: hidden;
 }
 
-/* Hidden images (GSAP will show them) */
-.elem img {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Title */
-.elem h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: color 0.3s ease;
-}
-
-/* Year */
-.elem h5 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #aaa;
-}
-
-/* Hover title effect */
-.elem:hover h1 {
-  color: #ff4d5a;
-}
-
-/* View All Work */
-#anchor {
-  margin-top: 4rem;
-  text-align: center;
-}
-
-#anchor a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 4px;
-  transition: all 0.3s ease;
-}
-
-#anchor a:hover {
-  color: #ff4d5a;
-  border-color: #ff4d5a;
-}
-
-
-/* /////////////////////////// */
-
-/* .elem{
+.elem{
     width: 100%;
     height: 200px;
     position: relative;
@@ -257,9 +199,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-} */
+}
 
-/* .elem2 {
+.elem2 {
     width: 100%;
     height: 200px;
     position: relative;
@@ -418,7 +360,7 @@ body {
     z-index: 999;
     height: 100%;
     display: none;
-} */
+}
 
 #anchor{
     padding: 0 2vw;

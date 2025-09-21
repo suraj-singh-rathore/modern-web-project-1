@@ -69,32 +69,3 @@ firstPageAnimation();
 circleSquize();
 
 
-document.querySelectorAll(".elem").forEach(function (element) {
-  let img = element.querySelector("img");
-
-  // Fade in on mousemove
-  element.addEventListener("mousemove", function (e) {
-    gsap.to(img, {
-      opacity: 1,
-      ease: "power1.out",
-      duration: 0.3
-    });
-
-    // Make image follow cursor
-    gsap.to(img, {
-      x: e.clientX - element.getBoundingClientRect().left,
-      y: e.clientY - element.getBoundingClientRect().top,
-      duration: 0.3,
-      ease: "power3.out"
-    });
-  });
-
-  // Fade out on mouseleave
-  element.addEventListener("mouseleave", function () {
-    gsap.to(img, {
-      opacity: 0,
-      ease: "power1.inOut",
-      duration: 0.3
-    });
-  });
-});
