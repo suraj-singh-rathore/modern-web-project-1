@@ -132,234 +132,38 @@
     padding-right: 10vw;
     padding-top: 100px;
     width: 100%;
+    color: #fff;
     background-color: #000;
 }
 
-/* ///////////////////////////////// */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: #0f0f0f;
-  color: #fff;
-  overflow-x: hidden;
-}
-
-/* Section with all project elems */
-#second {
-  margin: 6rem auto;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-/* Each project block */
-.elem {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-  overflow: hidden;
-}
-
 .elem{
-    width: 100%;
-    height: 200px;
     position: relative;
-    color: #fff;
-    opacity: .6;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2vw;
-}
-
-.elem::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 40px;
-    right: 0;
-    border-top: 1px solid #777;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888; 
+    border-bottom: 1px solid #888;
 }
 
 .elem h1{
-    height: 200px;
     text-transform: uppercase;
     font-size: 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    opacity: .7;
 }
 
-.elem2 {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    color: #fff;
-    opacity: .6;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2vw;
-}
-
-.elem2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 40px;
-    right: 0;
-    border-top: 1px solid #777;
-}
-
-.elem2 h1{
-    height: 200px;
-    text-transform: uppercase;
-    font-size: 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.elem3 {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    color: #fff;
-    opacity: .6;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2vw;
-}
-
-.elem3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 40px;
-    right: 0;
-    border-top: 1px solid #777;
-}
-
-.elem3 h1{
-    height: 200px;
-    text-transform: uppercase;
-    font-size: 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.elem4 {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    color: #fff;
-    opacity: .6;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2vw;
-}
-
-.elem4::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 40px;
-    right: 0;
-    border-top: 1px solid #777;
-}
-
-.elem4 h1{
-    height: 200px;
-    text-transform: uppercase;
-    font-size: 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.elem5 {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    color: #fff;
-    opacity: .6;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2vw;
-}
-
-.elem5::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 40px;
-    right: 0;
-    border-top: 1px solid #777;
-}
-
-.elem5 h1{
-    height: 200px;
-    text-transform: uppercase;
-    font-size: 6vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.elemlast {
+.elemlast{
     border-bottom: 1px solid #888;
-    padding: 0 2vw;
 }
 
-
-.elem1 img{
-    position: absolute;
+.elem img{
+   display: block;
+   opacity: 0;
     height: 100%;
     z-index: 999;
-    display: none;
-}
-
-.elem2 img{
     position: absolute;
-    z-index: 999;
-    height: 100%;
-    display: none;
-} 
-
-.elem3 img{
-    position: absolute;
-    z-index: 999;
-    height: 100%;
-    display: none;
-}
-
-.elem4 img{
-    position: absolute;
-    z-index: 999;
-    height: 100%;
-    display: none;
-}
-
-.elem5 img{
-    position: absolute;
-    z-index: 999;
-    height: 100%;
-    display: none;
 }
 
 #anchor{
